@@ -12,6 +12,7 @@ int main() {
    parallax_ping  ping1(pin10);
    car.goStraight(100);
    while(1) {
+      printf("%f\r\n", (float)ping1);
       if((float)ping1>10) led1 = 1;
       else {
          led1 = 0;
